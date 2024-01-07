@@ -1,6 +1,7 @@
 class Solution {
     public int findNumbers(int[] nums) {
         int evenDigitCount = 0;
+        
         for (int num : nums) {
             int digitCount = 0;
 
@@ -13,6 +14,7 @@ class Solution {
             if (digitCount % 2 == 0)
                 evenDigitCount += 1;
         }
+        
         return evenDigitCount;
     }
 }
